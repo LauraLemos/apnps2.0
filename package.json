@@ -1,0 +1,19 @@
+{
+  "name": "sistweb",
+  "version": "1.0.0",
+  "description": "sistema web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sistema",
+    "web",
+    "apnps"
+  ],
+  "author": "laura lemos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
