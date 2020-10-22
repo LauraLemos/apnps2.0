@@ -6,7 +6,7 @@ app.get('/',function(req,res){
     })
   
 app.listen(3000,function(){
-console.log("Conexão inicializada")
+console.log("Conexão inicializada!!")
 })
 
 
