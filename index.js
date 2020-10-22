@@ -5,7 +5,7 @@ app.get('/',function(req,res){
     res.send("Olá mundo, eu sou a Laura!!!")
     })
 
-    app.get('/mensagem',function(req,res){
+    app.get('/msg',function(req,res){
         res.send("OI, tudo bem?")
         })
   
