@@ -1,20 +1,20 @@
 const express = require('express')
 const app = express()
+var bodyParser = require('body-parser')
+var cookieParser = require('cookie-parser')
+var path = require('path')
+
+app.use(cookieParser())
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false}))
+
+app.set("view engine","ejs")
+
+app.use(express.static(path.join(__dirname,"public")))
 
 app.get('/',function(req,res){
     res.send("Olá mundo, eu sou a Laura!!!")
- })
-
-app.get('/msg',function(req,res){
-    res.send("OI, tudo bem?")
-})
-
- app.get('/sobre',function(req,res){
-      res.send("A pagina ainda está em construção")
- })
-
- app.get('/layout',function(req,res){
-    res.send("Esse é o novo layout")
  })
 
 app.listen(3000,function(){
