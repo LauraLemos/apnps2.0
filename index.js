@@ -27,7 +27,13 @@ app.get('/',function(req,res){
         {nome:'Diego',email:'diego@gmail.com'}
    ]})
   })
- 
+app.get('/add', function(req,res){
+  res.render('adiciona.ejs')
+})
+
+  app.post('/add',function(req,res){
+    console.log("Nome: " + req.body.txtNome + " | Email: " + req.body.txtEmail)
+  })
 
 app.listen(3000,function(){
 console.log("Conexão inicializada!!")
