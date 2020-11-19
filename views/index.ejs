@@ -1,7 +1,9 @@
 <%-include('cabecalho.ejs')%>    
     <form method="post">
+        <div id="barra"> 
         Pesquisar: <input type="text" name="txtPesquisa" placeholder="Pesquisar">
         <input type="submit" value="Pesquisar">
+    </div>
     </form>
     <br>
     <table>
@@ -28,4 +30,11 @@
         </tr>
         <% } %>
     </table>
+    <style>
+        #barra{
+         font-size: 15px;
+         font-family: 'Candara';
+         color: rgb(158, 35, 35);
+        }
+    </style>
 <%-include('rodape.ejs')%> 

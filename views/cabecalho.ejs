@@ -3,26 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Usuários</title>
     <style>
+        body{
+            background-color: rgba(235, 133, 133, 0.075);
+        
+        }
         table,td,th {
-            border: 1px solid black;
+            border: 1px solid rgb(158, 35, 35);
+            text-align: center;
+           
+        }
+        h1 {
+            text-align: center;
+            border: 51px solid rgb(158, 35, 35); 
+            font-size: 40px;
+            color: rgb(158, 35, 35);;
         }
         th {
+
             font-weight: bolder;
         }
         td,th{
             padding: 5px;
         }
-        li a{
-            color:red;
+          
+        #menu ul{
+            font-size: 25px;
+            width: 300px;
+            margin: 10px auto;
+            text-decoration: none;
+        }
+        #menu ul li{
+           
+            width: 10px auto;
+            display:inline;
+             
+        }
+       #teste a{
+            color: rgb(158, 35, 35);
+            text-align: center;
+            text-decoration: none;
+            padding: 5px 20px;
+          
+        }
+        #teste a:hover{
+            color: rgb(158, 35, 35);
+            background:  rgb(235, 133, 133);
+           
         }
     </style>
 </head>
 <body>
     <h1>Usuários</h1>
+    <div id="menu">
+
     <ul>
+        <div id="teste">
         <li><a href="/add">Adicionar</a></li>
         <li><a href="/">Listar</a></li>
+    </div>
     </ul>
+</div>
     <br>
