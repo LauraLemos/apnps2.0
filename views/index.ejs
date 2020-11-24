@@ -1,9 +1,7 @@
 <%-include('cabecalho.ejs')%>    
     <form method="post">
-        <div id="barra"> 
         Pesquisar: <input type="text" name="txtPesquisa" placeholder="Pesquisar">
         <input type="submit" value="Pesquisar">
-    </div>
     </form>
     <br>
     <table>
@@ -20,7 +18,7 @@
             <td><%=usuario._id%></td>
             <td><%=usuario.nome%></td>
             <td><%=usuario.email%></td>
-            <td><%=usuario.foto%></td>
+            <td><img class="foto" src="/fotos/<%=usuario.foto%>"/></td>
             <td>
                 <a href="/del/<%=usuario._id%>">Deletar</a>
             </td>
@@ -30,11 +28,4 @@
         </tr>
         <% } %>
     </table>
-    <style>
-        #barra{
-         font-size: 15px;
-         font-family: 'Candara';
-         color: rgb(158, 35, 35);
-        }
-    </style>
 <%-include('rodape.ejs')%> 
